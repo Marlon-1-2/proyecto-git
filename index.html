@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Ferrari — velocidad, diseño y legado. Página moderna con Flowbite y MerakiUI." />
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Ferrari — Velocidad y Legado</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+    <!-- MerakiUI CSS -->
+    <link href="https://unpkg.com/@merakiui/core/dist/merakiui.css" rel="stylesheet" />
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-neutral-950 text-neutral-100 font-inter">
+    <!-- Navbar -->
+    <header class="fixed top-0 inset-x-0 z-50 backdrop-blur bg-neutral-950/70 border-b border-neutral-800">
+        <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <a href="#" class="flex items-center gap-3 group">
+                    <span class="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-red-600 shadow-red-glow">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path d="M3 13h18l-2 6H5l-2-6zm2-8h14l2 6H3l2-6z" />
+                        </svg>
+                    </span>
+                    <span class="text-lg font-semibold tracking-wide">Ferrari</span>
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#modelos" class="nav-link">Modelos</a>
+                    <a href="#especificaciones" class="nav-link">Especificaciones</a>
+                    <a href="#galeria" class="nav-link">Galería</a>
+                    <a href="#legado" class="nav-link">Legado</a>
+                </div>
+                <div class="flex items-center gap-3">
+                    <a href="#contacto" class="btn-primary hidden sm:inline-flex">Contacto</a>
+                    <button data-collapse-toggle="mobile-menu" aria-controls="mobile-menu" aria-expanded="false"
+                        class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-neutral-300 hover:text-white hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-neutral-700">
+                        <span class="sr-only">Abrir menú</span>
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-neutral-800">
+            <div class="space-y-1 px-4 py-3">
+                <a href="#modelos" class="mobile-link">Modelos</a>
+                <a href="#especificaciones" class="mobile-link">Especificaciones</a>
+                <a href="#galeria" class="mobile-link">Galería</a>
+                <a href="#legado" class="mobile-link">Legado</a>
+                <a href="#contacto" class="btn-primary w-full">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative pt-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h1 class="text-4xl sm:text-5xl font-bold leading-tight">
+                        Velocidad que inspira. Diseño que trasciende.
+                    </h1>
+                    <p class="mt-4 text-neutral-300">
+                        Ferrari es la síntesis de ingeniería de precisión y emoción pura. Desde Maranello al mundo, cada
+                        modelo
+                        es una obra de arte en movimiento.
+                    </p>
+                    <div class="mt-6 flex flex-wrap gap-3">
+                        <a href="#modelos" class="btn-primary">Explorar modelos</a>
+                        <a href="#galeria" class="btn-secondary">Ver galería</a>
+                    </div>
+                    <div class="mt-8 flex items-center gap-6 text-sm text-neutral-400">
+                        <div class="flex items-center gap-2">
+                            <span class="badge-dot bg-red-600"></span> ADN de competición
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="badge-dot bg-yellow-400"></span> Innovación híbrida
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="badge-dot bg-emerald-500"></span> Artesanía italiana
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="hero-card">
+                        <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1600&auto=format&fit=crop"
+                            alt="Ferrari frontal" class="hero-img" />
+                        <div class="hero-gradient"></div>
+                        <div class="hero-caption">
+                            <span class="inline-flex items-center gap-2">
+                                <svg class="h-5 w-5 text-red-500" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2l3 7h7l-5.5 4 2 7-6.5-4.5L6.5 20l2-7L3 9h7z" />
+                                </svg>
+                                SF90 Stradale — Híbrido V8
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Decor -->
+        <div class="decor-grid"></div>
+    </section>
+
+    <!-- Modelos destacados -->
+    <section id="modelos" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Modelos destacados</h2>
+            <p class="section-subtitle">Rendimiento, carácter y una línea roja que une generaciones.</p>
+        </div>
+
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Card 1 -->
+            <div class="m-card">
+                <img class="m-card-img"
+                    src="https://images.unsplash.com/photo-1617814076560-9b7f6f0f0f2e?q=80&w=1600&auto=format&fit=crop"
+                    alt="Ferrari 488 Pista" />
+                <div class="m-card-body">
+                    <h3 class="m-card-title">488 Pista</h3>
+                    <p class="m-card-text">Ligereza extrema y aerodinámica activa para un V8 que ruge sin concesiones.
+                    </p>
+                    <div class="m-card-tags">
+                        <span class="tag">V8 Biturbo</span>
+                        <span class="tag">710 hp</span>
+                        <span class="tag">RWD</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="m-card">
+                <img class="m-card-img"
+                    src="https://images.unsplash.com/photo-1617814069310-0b2f2f3b1f2e?q=80&w=1600&auto=format&fit=crop"
+                    alt="Ferrari F8 Tributo" />
+                <div class="m-card-body">
+                    <h3 class="m-card-title">F8 Tributo</h3>
+                    <p class="m-card-text">Un tributo al motor V8 más premiado, con respuesta instantánea y diseño
+                        afilado.</p>
+                    <div class="m-card-tags">
+                        <span class="tag">V8</span>
+                        <span class="tag">710 hp</span>
+                        <span class="tag">Aero S-Duct</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="m-card">
+                <img class="m-card-img"
+                    src="https://images.unsplash.com/photo-1617814072101-9f1f6f0f0f2e?q=80&w=1600&auto=format&fit=crop"
+                    alt="Ferrari Roma" />
+                <div class="m-card-body">
+                    <h3 class="m-card-title">Roma</h3>
+                    <p class="m-card-text">Elegancia contemporánea con alma gran turismo—sofisticación sin perder el
+                        pulso deportivo.</p>
+                    <div class="m-card-tags">
+                        <span class="tag">V8</span>
+                        <span class="tag">620 hp</span>
+                        <span class="tag">GT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Especificaciones -->
+    <section id="especificaciones" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Especificaciones clave</h2>
+            <p class="section-subtitle">Datos que cuentan la historia detrás del rugido.</p>
+        </div>
+
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="spec-card">
+                <span class="spec-label">0–100 km/h</span>
+                <span class="spec-value">2.5–3.4 s</span>
+            </div>
+            <div class="spec-card">
+                <span class="spec-label">Potencia</span>
+                <span class="spec-value">620–1000 hp</span>
+            </div>
+            <div class="spec-card">
+                <span class="spec-label">Arquitectura</span>
+                <span class="spec-value">V8 / V12 / Híbrido</span>
+            </div>
+            <div class="spec-card">
+                <span class="spec-label">Tracción</span>
+                <span class="spec-value">RWD / AWD</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Galería</h2>
+            <p class="section-subtitle">Líneas, sombras y el rojo que nunca pasa desapercibido.</p>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <figure class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1200&auto=format&fit=crop"
+                    alt="Detalle frontal" />
+            </figure>
+            <figure class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1519648023493-d82b5f8d7b8a?q=80&w=1200&auto=format&fit=crop"
+                    alt="Perfil dinámico" />
+            </figure>
+            <figure class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200&auto=format&fit=crop"
+                    alt="Interior deportivo" />
+            </figure>
+            <figure class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1516117172878-fd2c41f4a759?q=80&w=1200&auto=format&fit=crop"
+                    alt="Detalle de llanta" />
+            </figure>
+            <figure class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop"
+                    alt="Trasera agresiva" />
+            </figure>
+            <figure class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?q=80&w=1200&auto=format&fit=crop"
+                    alt="Circuito" />
+            </figure>
+        </div>
+    </section>
+
+    <!-- Línea de tiempo / Legado -->
+    <section id="legado" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Legado</h2>
+            <p class="section-subtitle">De la pista a la calle—una historia de victorias y evolución.</p>
+        </div>
+
+        <ol class="timeline">
+            <li class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h4 class="timeline-title">1947 — Nace Ferrari</h4>
+                    <p>Enzo Ferrari funda la marca y establece un estándar de pasión y rendimiento.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h4 class="timeline-title">1950s — Dominio en F1</h4>
+                    <p>Los primeros títulos en Fórmula 1 consolidan el ADN competitivo de la casa de Maranello.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h4 class="timeline-title">1987 — F40</h4>
+                    <p>Un icono de fibra de carbono y turbo—puro minimalismo orientado al rendimiento.</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h4 class="timeline-title">2020s — Híbridos</h4>
+                    <p>Modelos como el SF90 combinan electricidad y combustión para nuevas cotas de potencia.</p>
+                </div>
+            </li>
+        </ol>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+        <div class="cta">
+            <div class="cta-content">
+                <h3 class="text-2xl sm:text-3xl font-bold">¿Listo para sentir el pulso de Ferrari?</h3>
+                <p class="text-neutral-300">Agenda una visita o solicita más información sobre disponibilidad y
+                    personalización.</p>
+            </div>
+            <div class="cta-actions">
+                <a href="#contacto" class="btn-primary">Solicitar información</a>
+                <a href="#galeria" class="btn-secondary">Ver más fotos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="border-t border-neutral-800">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <div>
+                <h5 class="footer-title">Ferrari</h5>
+                <p class="footer-text">Velocidad, precisión y emoción. Una marca que late con cada revolución.</p>
+            </div>
+            <div>
+                <h5 class="footer-title">Enlaces</h5>
+                <ul class="space-y-2">
+                    <li><a class="footer-link" href="#modelos">Modelos</a></li>
+                    <li><a class="footer-link" href="#especificaciones">Especificaciones</a></li>
+                    <li><a class="footer-link" href="#galeria">Galería</a></li>
+                    <li><a class="footer-link" href="#legado">Legado</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="footer-title">Contacto</h5>
+                <ul class="space-y-2">
+                    <li><span class="footer-text">Maranello, Italia</span></li>
+                    <li><span class="footer-text">+39 000 000 000</span></li>
+                    <li><span class="footer-text">info@ferrari.com</span></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="footer-title">Síguenos</h5>
+                <div class="flex gap-3">
+                    <a class="social-btn" href="#" aria-label="Instagram">
+                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 4a5 5 0 100 10 5 5 0 000-10zm6-1a1 1 0 100 2 1 1 0 000-2z" />
+                        </svg>
+                    </a>
+                    <a class="social-btn" href="#" aria-label="YouTube">
+                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M23.5 6.2a3 3 0 00-2.1-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.4.6A3 3 0 00.5 6.2C0 8 0 12 0 12s0 4 .5 5.8a3 3 0 002.1 2.1c1.8.6 9.4.6 9.4.6s7.6 0 9.4-.6a3 3 0 002.1-2.1c.5-1.8.5-5.8.5-5.8s0-4-.5-5.8zM9.5 15.5v-7l6 3.5-6 3.5z" />
+                        </svg>
+                    </a>
+                    <a class="social-btn" href="#" aria-label="Twitter">
+                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012 7.5v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-neutral-800 py-6 text-center text-sm text-neutral-400">
+            © 2026 Ferrari — Página demo con Flowbite y MerakiUI.
+        </div>
+    </footer>
+
+    <!-- Flowbite JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+</html>
